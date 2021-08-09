@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+<listeners>
+		<listener class-name="com.api.report.ExtentReporterNG" />
+	</listeners>
+	
+  <test  name="Test POST GET DELETE API">
+    <classes>
+      <class name="APIGroup.ProjectAPI.TC_POSTGMAP">
+       <methods>
+        <include name="postmap" />
+        <include name="Getmapdetails" />
+        <include name="deleteMap" />
+      </methods>
+      
+    </class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
